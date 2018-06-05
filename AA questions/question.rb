@@ -1,4 +1,6 @@
-class Question
+require_relative 'modelbase'
+
+class Question < Modelbase
   attr_reader :id, :user_id
   def self.find_by_author_id(author_id)
     data = QuestionsDatabase.instance.execute(<<-SQL, author_id)

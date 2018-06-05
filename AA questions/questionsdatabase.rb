@@ -5,6 +5,7 @@ require_relative 'question.rb'
 require_relative 'questionfollow.rb'
 require_relative 'questionlikes.rb'
 require_relative 'reply.rb'
+require_relative 'modelbase'
 
 class QuestionsDatabase < SQLite3::Database
   include Singleton
